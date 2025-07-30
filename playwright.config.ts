@@ -8,8 +8,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : 2,
   reporter: [
     ['html'],
-    ['junit', { outputFile: 'test-results/junit.xml' }],
-    ['allure-playwright']
+    ['junit', { outputFile: 'test-results/junit.xml' }]
   ],
   use: {
     baseURL: 'https://practicesoftwaretesting.com',
